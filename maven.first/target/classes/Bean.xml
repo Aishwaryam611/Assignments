@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id = "Customer" class = "com.springCore.first.Customer">
+	<property name="customerId" value="111" />
+	<property name="customerName" value="Aishwarya" />
+	<property name="customerContact" value="7046376879" />
+	<property name="customerAddress" ref = "Address">
+	</property>
+
+</bean>
+
+<bean id = "Address" class = "com.springCore.first.Address">
+	<property name="street" value="Khude path" />
+	<property name="city" value="Pune" />
+	<property name="zip" value="400411" />
+	<property name="country" value = "India">
+	</property>
+	
+</bean>
+
+
+</beans>
